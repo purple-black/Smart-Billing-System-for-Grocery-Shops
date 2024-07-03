@@ -4,14 +4,14 @@ import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10
 //import {firebase};
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAgaOAA9jq9KvVpihtAvl__zO3SUkdsQjM",
-    authDomain: "smartbillingsystem-474b7.firebaseapp.com",
-    projectId: "smartbillingsystem-474b7",
-    storageBucket: "smartbillingsystem-474b7.appspot.com",
-    messagingSenderId: "891727065908",
-    appId: "1:891727065908:web:fde2711a9593c091c0ab61",
-    measurementId: "G-C4VL7W1C52"
- };
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_PROJECT_ID.appspot.com",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  appId: "YOUR_APP_ID",
+  measurementId: "YOUR_MEASUREMENT_ID"  // Optional, only if using Firebase Analytics
+};
 
 // Initializing Firebase
 const app = initializeApp(firebaseConfig);
