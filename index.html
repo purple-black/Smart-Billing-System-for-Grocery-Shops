@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Billing System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Smart Billing System</h1>
+
+    <!-- Item List -->
+    <ul id="item-list"></ul>
+        
+
+    <!-- Total Amount-->
+
+    <div id="total-section">
+        <h2>Total Amount: <span id="total-amount">1180</span></h2>
+        <!-- <img id="qr-code" src="" alt="QR Code"> -->
+        <button id="confirm-button">Confirm & Proceed to Pay</button>
+        <div id="qr-code-section"></div>
+    </div>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.10.0/firebase-database.js"></script>
+    <script type="module" src="script.js"></script>
+    <script>
+        document.getElementById('confirm-button').addEventListener('click', function(){
+            var qrCodeSection = document.getElementById('qr-code-section');
+            qrCodeSection.innerHTML = '';
+            document.getElementById('qr-code-section').innerHTML = " <img src = 'QRCode4.jpg' alt = 'QR Code'>";
+        })
+    </script>
+</body>
+</html>
